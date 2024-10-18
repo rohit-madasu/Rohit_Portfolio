@@ -22,8 +22,7 @@ body {
 
 #profile-image img {
     width: 200px;
-    height: 205px;
-    border: 3px solid #004080;
+    height: 217px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,9 +43,43 @@ header p {
     margin: 5px 0;
 }
 
-a {
-    color: #00aaff;
+.profile-links {
+    margin-top: 10px;
+}
+
+.profile-links a {
+    color: #ffffff;
     text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.profile-links a:first-child {
+    margin-left: 0;
+}
+
+.profile-links a:last-child {
+    margin-right: 0;
+}
+
+.link-separator {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 .section {
@@ -62,6 +95,10 @@ a {
     margin-bottom: 10px;
     border-bottom: 2px solid #004080;
     padding-bottom: 5px;
+}
+
+#work p strong {
+    font-size: 1.1em;
 }
 
 .job h3, .job h4 {
@@ -87,7 +124,7 @@ a {
 #skills ul {
     list-style-type: square;
     padding-left: 20px;
-    columns: 2;
+    columns: 1;
     -webkit-columns: 2;
     -moz-columns: 2;
 }
