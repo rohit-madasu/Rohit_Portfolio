@@ -4,6 +4,22 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    padding-top: 20px;
+}
+
+#profile-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #004080;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -11,6 +27,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    margin-right: 220px;
 }
 
 header h1 {
@@ -27,11 +44,15 @@ a {
     text-decoration: none;
 }
 
-section {
+.section {
     padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+.section h2 {
     font-size: 2em;
     margin-bottom: 10px;
     border-bottom: 2px solid #004080;
@@ -45,6 +66,12 @@ section h2 {
 .job h3 {
     font-size: 1.5em;
     margin-top: 20px;
+    color: #004080;
+}
+
+.job h4 {
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .job ul {
@@ -55,6 +82,9 @@ section h2 {
 #skills ul {
     list-style-type: square;
     padding-left: 20px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 footer {
@@ -65,4 +95,24 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    #profile-image {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header {
+        margin-right: 0;
+    }
+
+    #skills ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
 }
