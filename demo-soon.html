@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - New Project</title>
+    <title>Demo Coming Soon</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -18,7 +18,7 @@
         }
         
         .container {
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
             background-color: white;
             padding: 3rem;
@@ -41,33 +41,33 @@
         
         .icon {
             font-size: 4rem;
-            color: #667eea;
+            color: #28a745;
             margin-bottom: 1.5rem;
-            animation: pulse 2s infinite;
+            animation: bounce 2s infinite;
         }
         
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
             }
-            50% {
-                transform: scale(1.1);
+            40% {
+                transform: translateY(-10px);
             }
-            100% {
-                transform: scale(1);
+            60% {
+                transform: translateY(-5px);
             }
         }
         
         h1 {
             color: #333;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
             font-weight: 700;
         }
         
         .subtitle {
             color: #666;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             font-weight: 300;
         }
@@ -76,53 +76,35 @@
             background-color: #f8f9fa;
             padding: 2rem;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #28a745;
             margin: 2rem 0;
         }
         
         .message p {
             color: #555;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin: 0;
             line-height: 1.8;
+            font-weight: 500;
         }
         
-        .features {
-            text-align: left;
-            margin: 2rem 0;
+        .info {
+            background-color: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
         }
         
-        .features h3 {
-            color: #333;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .features li {
-            padding: 0.5rem 0;
-            color: #666;
-            position: relative;
-            padding-left: 2rem;
-        }
-        
-        .features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #28a745;
-            font-weight: bold;
-            font-size: 1.2rem;
+        .info p {
+            color: #2d5a2d;
+            margin: 0;
+            font-size: 0.95rem;
         }
         
         .back-button {
             display: inline-block;
             padding: 12px 30px;
-            background-color: #667eea;
+            background-color: #28a745;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -132,9 +114,9 @@
         }
         
         .back-button:hover {
-            background-color: #5a6fd8;
+            background-color: #218838;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
         }
         
         .footer {
@@ -152,7 +134,7 @@
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .subtitle {
@@ -162,34 +144,31 @@
             .icon {
                 font-size: 3rem;
             }
+            
+            .message p {
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon">🚀</div>
-        <h1>Coming Soon</h1>
-        <p class="subtitle">New Project Under Development</p>
-
+        <div class="icon">🎬</div>
+        <h1>Demo Coming Soon</h1>
+        <p class="subtitle">Video Demonstration in Progress</p>
+        
         <div class="message">
-            <p>This project is under development and will be coming soon here.</p>
+            <p>Demo Video For this Project Coming Soon</p>
         </div>
-
-        <div class="features">
-            <h3>What to Expect</h3>
-            <ul>
-                <li>Innovative features and functionality</li>
-                <li>User-friendly interface design</li>
-                <li>High-performance capabilities</li>
-                <li>Cross-platform compatibility</li>
-                <li>Regular updates and improvements</li>
-            </ul>
+        
+        <div class="info">
+            <p>We're working on creating an engaging demo video to showcase the features and capabilities of this project. Check back soon!</p>
         </div>
         
         <a href="index.html" class="back-button">← Back to Portfolio</a>
         
         <div class="footer">
-            <p>Stay tuned for updates!</p>
+            <p>Demo video will be available shortly!</p>
         </div>
     </div>
 </body>
